@@ -1,0 +1,17 @@
+.menu__car--content{
+    background-color: $color-light-grey;
+    padding: $pd-1 0;
+     .navbar-nav{
+        .nav-item{
+            margin-left:$mg-1;
+            .nav-link{
+                color:$color-grey;
+                font-size:$fs-2 - 3;
+                font-weight: bold;
+                &:hover{
+                    color:$color-blue;
+                }
+            }
+        }
+    } 
+}

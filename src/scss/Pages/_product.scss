@@ -1,0 +1,113 @@
+#product {
+    background-color: $color-black;
+    padding-top: $pd-2;
+    .nav .nav-item .nav-link.active {
+        background-color: transparent;
+        border: none;
+        color: $color-blue;
+    }
+    .vehice-tabs {
+        li {
+            padding: $pd-1 $pd-2;
+            background: linear-gradient(#303030, #202020);
+            border: 1px outset $color-dark;
+            a {
+                color: $color-grey;
+                padding: 0;
+            }
+        }
+    }
+    .product__item--1 {
+        position: relative;
+        &:hover {
+            .overlay {
+                height: 50%;
+            }
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $color-dark-grey--2;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            .content {
+                color: $color-white;
+                font-size: $fs-1;
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: left;
+                .title {
+                    list-style-type: none;
+                    margin: 0;
+                    a {
+                        font-size: $fs-title;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .product__item--2 {
+        position: relative;
+        &:hover {
+            .overlay {
+                height: 20%;
+            }
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $color-dark-grey--2;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            .content {
+                color: $color-white;
+                font-size: $fs-1;
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: left;
+                .title {
+                    a {
+                        font-size: $fs-title;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .showAll {
+        .showAll__content {
+            display: none;
+        }
+    }
+    .content__product__title {
+        padding: $pd-1;
+        .content__product__title--1 {
+            i {
+                color: $color-white;
+            }
+            span {
+                color: $color-white;
+                padding-right: $pd-1;
+            }
+        }
+        .content__product__title--2 {
+            color: $color-white;
+            font-size: $fs-1;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@mixin button($color, $bg-color) {
+    font-size: $fs-2;
+    color: $color;
+    padding: $pd-0 $pd-2;
+    background-color: $bg-color;
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
+
+.btn--dark {
+    @include button($color-grey, $color-dark);
+}
+
+.btn--blue {
+    @include button($color-white, $color-blue);
+    border-radius: 40px;
+}
+
+.btn--white {
+    @include button($color-white, transparent);
+    border: 2px solid $color-white;
+    border-radius: 40px;
+}

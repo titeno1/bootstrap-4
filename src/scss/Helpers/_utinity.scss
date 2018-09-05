@@ -1,0 +1,37 @@
+// .pd-1{
+//     padding:$pd-1;
+// }
+// .pd-x-1{
+//     padding:0 $pd-1;
+// }
+// .pd-y-1{
+//     padding:$pd-1 0;
+// }
+// .pd-t-1{
+//     padding:$pd-1;
+// }
+// .pd-b-1{
+//     padding:$pd-1;
+// }
+// .pd-l-1{
+//     padding:$pd-1;
+// }
+// .pd-r-1{
+//     padding:$pd-1;
+// }
+$img-item: (1, xe-1) (2, xe-2) (3, xe-3) (4, xe-4) (5, xe-5) (6, xe-6);
+@each $stt,
+$img in $img-item {
+    .item-sp-#{$stt} {
+        background-image: url('../img/#{$img}.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+@for $stt from 1 through 14 {
+    .delay-#{$stt} {
+        animation-delay: 0.3s * $stt;
+    }
+}

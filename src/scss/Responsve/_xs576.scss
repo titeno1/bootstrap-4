@@ -1,0 +1,68 @@
+@media (max-width: 575.98px) {
+    .header {
+        .navbar-brand {
+            img {
+                width: 50px;
+                margin-right: $mg-1;
+            }
+            span {
+                padding-right: $pd-1;
+                color: $color-white;
+                font-size: $fs-1;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                margin-left: $mg-1;
+                .nav-link {
+                    color: $color-grey;
+                    font-size: $fs-2 - 3;
+                    &:hover {
+                        color: $color-blue;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-item {
+        .carousel-caption {
+            width: 100%;
+            left: $pd-2;
+            top: $mg-2;
+            text-align: left;
+            .carousel-line {
+                width: 30px;
+                height: 1px;
+                background-color: $color-white;
+                margin-bottom: $mg-1;
+            }
+            h3 {
+                font-size: $fs-1;
+                margin-bottom: $mg-1;
+            }
+            .btn {
+                display: none;
+            }
+        }
+    }
+    #welcome {
+        background: $color-white;
+        .welcome-title {
+            padding-left: $pd-5;
+            padding-top: $mg-5;
+            text-align: left;
+            color: $color-dark;
+            .welcome-line {
+                width: 50px;
+                height: 2px;
+                background-color: $color-black;
+                margin-bottom: $mg-1;
+            }
+            h1 {
+                font-size: $fs-2;
+                font-weight: bold;
+                margin-bottom: $mg-2;
+            }
+        }
+    }
+}

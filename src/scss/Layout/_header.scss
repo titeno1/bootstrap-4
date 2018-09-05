@@ -1,0 +1,35 @@
+.header {
+    background-color: $color-black;
+    .header__content--1__item {
+        padding-right: $mg-2;
+        color: $color-grey;
+        font-size: $fs-1;
+        list-style: none;
+        text-decoration: none;
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    .navbar-brand {
+        img {
+            width: 70px;
+            margin-right: $mg-3;
+        }
+        span {
+            padding-right: $pd-1;
+            color: $color-white;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-left: $mg-1;
+            .nav-link {
+                color: $color-grey;
+                font-size: $fs-2 - 3;
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
